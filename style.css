@@ -1,0 +1,278 @@
+#navbar{
+    width:100%;
+    height:70px;
+    left:0px;
+    top: 0 px;  
+   position: relative;
+   z-index: 999;
+   background-color: #000;
+}
+
+.fp-tableCell{
+
+    display: table-cell;
+    vertical-align: top !important;
+    width: 100%;
+    height: 100%;
+
+}
+
+  }
+
+#logo{
+    position: relative;
+    height: 70px;
+
+}
+
+.menu{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    font-weight: 1000;
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;    
+    text-align: conter;
+    margin-left : 0px;
+
+
+    display: inline-block;
+    transition: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+
+.menu:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    text-decoration: none;
+    color: aliceblue;
+
+  }
+.menu:hover::after{
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #000;
+
+}
+
+#navbar .menu img{
+    height:70px;
+}
+
+.page{
+    padding-left: 200px;
+}
+
+
+@media screen and (max-width: 1350px) {
+   #navbar{
+        height: 60px;
+   }
+   #navbar .menu img{
+    height:60px;
+}
+    .page {
+      font-size: 39px;
+      padding-left: 150px;
+    }
+  }
+  @media screen and (max-width: 1170px) {
+    #navbar{
+         height: 55px;
+    }
+    #navbar .menu img{
+     height:55px;
+ }
+     .page {
+       font-size: 35px;
+       padding-left: 120px;
+     }
+   }
+
+   @media screen and (max-width: 1020px) {
+    #navbar{
+         height: 45px;
+    }
+    #navbar .menu img{
+         height:35px;
+ }
+     .page {
+       font-size: 25px;
+       padding-left: 110px;
+       position: relative;
+       top: -10px;
+     }
+   }
+
+   @media screen and (max-width: 815px) {
+    #navbar{
+         height: 40px;
+    }
+    #navbar .menu img{
+         height:35px;
+         position: relative;
+         top: -5px;
+
+ }
+     .page {
+       font-size: 20px;
+       padding-left: 75px;
+       position: relative;
+       top: -10px;
+     }
+   }
+
+
+   @media screen and (max-width: 620px) {
+    #navbar{
+         height: 38px;
+    }
+    #navbar .menu img{
+         height:30px;
+         position: relative;
+         top: -5px;
+
+ }
+     .page {
+       font-size: 18px;
+       padding-left: 45px;
+       position: relative;
+       top: -13px;
+     }
+   }
+/* 
+여기서부터 현문 */
+
+.first{
+    border: 3px solid rgb(58, 0, 0);
+    position: fixed;
+    width: 27%;
+    height: 74%;
+    transition: 0.5s;
+    margin-top: 5%;
+}
+
+.second{
+    border: 3px solid rgb(58, 0, 0); 
+    position: fixed;
+    left: 31%;
+    margin-left: 5%;
+    width:27%;
+    height: 74%;
+    transition: 0.5s;
+    margin-top: 5%;
+}
+
+.third{
+    border: 3px solid rgb(58, 0, 0);
+    position: fixed;
+    margin-left: 5%;
+    left: 66%;
+    width:27%;  
+    height: 74%;
+    transition: 0.5s;
+    margin-top: 5%;
+}
+
+.first:hover, .second:hover, .third:hover{
+    background-color: rgb(58, 0, 0);
+    box-shadow : 0px 0px 4px 4px black inset;
+    border:none;
+}
+
+#review{
+    text-align: center;
+    vertical-align: top !important;
+    font-weight:bolder;
+
+}
+
+.select{
+    position: fixed;
+    bottom: 25%;
+    right: 46%;
+}
+
+#img{
+    width:70px;
+    border-radius: 100%;
+    grid-column:1;
+    border: 2px solid white;
+    position: relative;
+    top: 27px;
+    left: -61px;
+}
+.name{
+    grid-column: 2;
+    position: relative;
+    left: 13px;
+    top: -56px;
+    font-weight:bold;
+}
+.age{
+    grid-column: 2;
+    position: relative;
+    left: 21px;
+    top: -56px;
+    font-size: 15px;
+    color:gray;
+    font-style:italic;
+    
+}
+.inst{
+    grid-column: 2;
+    position: relative;
+    left: 21px;
+    top: -54px;
+    font-size: 15px;
+    color:gray;
+    font-style:italic;
+    
+}
+.text{
+    margin: 0px;
+    position: relative;
+    top: -41px;
+    font-size: 14px;
+    padding: 5%;
+    text-align:left;
+}
+
+@media(max-width:757px){
+    .first, .second, .third{
+        border: white;
+    }
+    #img{
+        width:40px;
+    }
+}
+
+@media(max-width:630px){
+    .first, .second, .third{
+        height:90%;
+    }
+    .name{
+        font-size:14px;
+    }
+    .age, .inst{
+        font-size:13px;
+    }
+    #img{
+        left:-37px;
+        top:-3px;
+    }
+}
+.footer {
+    width:100%;
+    height:60px;
+    position:absolute;
+    bottom:0;
+    background:black;
+   text-align: center;
+   color: white;
+ }
